@@ -1,0 +1,37 @@
+
+#include <bits/stdc++.h>
+using namespace std; 
+typedef long long ll;
+ll md = 1e9+7;
+ll inf=1e16;
+#define pb push_back
+typedef pair<int, int> pii;
+typedef pair<ll, ll> pll;
+typedef vector<pair<int, int>> vii;
+typedef vector<pair<ll, ll>> vll;
+typedef vector<int> vi;
+typedef vector<ll> vl;
+typedef unsigned long long ull;
+#define mp make_pair
+#define ull unsigned long long
+#define pqs priority_queue<int,vi,greater<int> >
+#define setbits(x) __builtin_popcountll(x)
+#define dbg(x) cerr<<#x<<" = "<<x<<endl
+#include <ext/pb_ds/assoc_container.hpp>
+using namespace __gnu_pbds;
+typedef tree<pll,null_type, less<pll> ,rb_tree_tag, tree_order_statistics_node_update> indexed_set;
+ 
+int main(){
+ios::sync_with_stdio(0);cin.tie(0);cout.tie(0);
+
+ll n;cin>>n;
+
+while(n!=1){
+	cout<<n<<" ";
+	if(n&1LL)n=3LL*n+1;
+	else n/=2;
+}
+cout<<1;
+
+return 0;
+}
